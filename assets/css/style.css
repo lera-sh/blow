@@ -13,7 +13,7 @@ div {
 
 .header-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 100px 90px 0px 110px;
 }
 
@@ -29,7 +29,6 @@ div {
 
 .menu-item {
   border-radius: 35px;
-  color: #000;
   padding-bottom: 10px;
   padding-top: 10px;
   text-align: center;
