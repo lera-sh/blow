@@ -13,7 +13,7 @@ div {
 
 .header-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 100px 90px 0px 110px;
 }
 
@@ -40,6 +40,5 @@ div {
   align-items: center;
   display: flex;
   font-size: 22px;
-  justify-content: space-around;
   list-style: none;
 }
