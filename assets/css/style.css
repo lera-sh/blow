@@ -3,10 +3,22 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
   padding: 0;
 }
 
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../fonts/myriad.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/montserrat.ttf);
+}
+
 body {
   background-image: url("../images/backround-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  height: 100vh;
 }
 
 div {
@@ -14,7 +26,10 @@ div {
 }
 
 .header-title {
+  font-family: 'Montserrat', 'Arial', 'Times New Roman', sans-serif;
   font-size: 40px;
+  font-weight: bold;
+  padding: right; 
 }
 
 .header-section {
@@ -35,6 +50,9 @@ div {
 
 .menu-item {
   border-radius: 35px;
+  display: flex;
+  font-family: 'Montserrat', 'Arial', 'Times New Roman', sans-serif;
+  justify-content: space-around;
   padding-bottom: 10px;
   padding-top: 10px;
   text-align: center;
@@ -50,16 +68,21 @@ div {
 }
 
 .explore-button {
+  align-self: center;
   align-items: center;
   background-color: #000;
+  border: none;
   border-radius: 9999px;
   box-shadow: 0 40px 50px 0 rgba(0 ,0, 0, .5);
   color: #f0cdab;
   display: flex;
+  font-family: 'Montserrat', 'Arial', 'Times New Roman', sans-serif;
   justify-content: center;
+  margin-bottom: 100px;
   padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
+  text-transform: uppercase;
   transition: .3s opacity ease;
   width: 300px;
 }
@@ -69,8 +92,42 @@ div {
   opacity: .8;
 }
 
+.slogan {
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 40px 50px 0 rgba(0 ,0, 0, .5);
+  color: #b3b3b3;
+  display: flex;
+  font-family: 'Myriad Pro', 'Arial', 'Times New Roman', sans-serif;
+  height: 100%;
+  justify-content: center;
+  text-transform: uppercase;
+  transform: rotate(180deg);
+  width: 120px;
+  writing-mode: tb;
+}
+
+.primary-phrase {
+  color: #000;
+}
+
 .main-section {
   display: flex;
-  justify-content: center;
-  padding-top: 450px;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.icon-bag {
+  bottom: 45px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 35px;
+}
+
+.aside-section {
+  display: flex;
+  position: relative;
 }
